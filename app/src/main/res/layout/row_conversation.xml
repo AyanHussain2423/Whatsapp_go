@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:elevation="10dp"
+        android:padding="2dp">
+
+    <ImageView
+            android:id="@+id/onlineindicater"
+            android:layout_width="13dp"
+            android:layout_height="12dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#1C5279"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:srcCompat="@drawable/circle_green" />
+
+    <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:shadowColor="@color/white"
+            android:text="Ayan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/lastMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
+            android:shadowColor="@color/white"
+            android:text="Tap to chat"
+            android:textColor="#434343"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+            android:id="@+id/Msgtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:shadowColor="@color/white"
+            android:text="10:00AM"
+            android:textColor="#7C7C7C"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    <View
+            android:id="@+id/view5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
